@@ -15,13 +15,7 @@ The extension can be found on the [Visual Studio Marketplace](https://marketplac
 * [Compile the program](#Compile the program): refer to [ola-lang.md](docs/ola-lang.md).
 * [Run the program](#Execute the program): refer to [olavm-execute.md](docs/olavm-execute.md).
 * Generate ZK proof: OlaVM execution results and all intermediate processes are recorded during execution and saved as json, including CPU execution trace table, Memory trace table, Range Check trace table, Bitwise trace table and comparison trace table. You can open these json files directly for a simple view, or you can convert it to an excel file for further analysis with the [tools](docs/olavm-trace-analysis.md) we provide. Generating proof can take some time, depending on the size of the trace you are generating.
-```
-ola prove  -i my_exec_trace.json -o my_generated_proof
-```
 * Verify ZK proof: Congratulations you have successfully generated the proof, now you only need to execute one command to verify it.
-```
-ola verify -i my_generated_proof
-```
 
 Beginner Workshop: implement the Fibonacci algorithm with loop and recursive two versions.
 
@@ -68,20 +62,34 @@ In this step, the developer should compile the code to the JSON format executabl
 
 compile code to assembly file fibo_loop_asm.asm:
 ````
-olac compile fibo_loop_asm.ola --gen asm
+./olac compile fibo_loop_asm.ola --gen asm
 
 ````
 
-compile code to executable file fibo_loop_exe.json:
+The developer uses ola client command *asm* to encode code to executable file fibo_loop_exe.json:
 
 ``
+./ola asm -i fibo_loop_asm.json -o fibo_loop_exe.json
 ``
 
-### Execute the program and generate trace file fibo_loop_trace.json.
+### Execute the program
+The developer uses ola client command *run* to run executable file fibo_loop_exe.json and generate trace file fibo_loop_trace.json.
 
 ``
 ./ola run  -i fibo_loop_exe.json -o fibo_loop_trace.json
 ``
+
+### Generate ZK proof
+The developer uses ola client command *prove* to generate ZK proof.
+```
+./ola prove  -i fibo_loop_trace.json -o fibo_loop_proof
+```
+
+### Verify ZK proof
+Finally，The developer uses ola client command *verify* to verify ZK proof. If verification is passed, the client should print "Verify succeed!".
+```
+./ola verify -i fibo_loop_proof
+```
 
 ## Multi-core prover performance
 
