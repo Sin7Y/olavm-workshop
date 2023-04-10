@@ -32,7 +32,7 @@ In the paragraph, we guide the developer through the implementation of the loop 
 ### Edit the program
 At first, the developer should use an editor(recommend [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola)) to develop the Fibonacci algorithm code(refer to below) and save to file fibo_loop.ola.
 
-``
+````js
 contract Fibonacci {
 
     fn main() {
@@ -55,7 +55,7 @@ contract Fibonacci {
     }
 
 }
-``
+````
 
 ### Compile the program
 In this step, the developer should compile the code to the JSON format executable file. Using below tool:
