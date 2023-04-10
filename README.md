@@ -4,7 +4,7 @@ This tutorial explains the steps necessary to run the program on OlaVM, generate
 
 # Prerequisites
 There are some resources about OlaVM. The developers should learn the concepts and demonstrates to grasp the designs of OlaVM.
-
+* [Hello, OlaVM!](https://hackmd.io/@sin7y/H1yPj_J8i)
 * [Ola - A ZKVM-based, High-performance, and Privacy-focused Layer2 platform](https://github.com/Sin7Y/olavm-whitepaper-v2/blob/master/Ola%20-%20A%20ZKVM-based%2C%20High-performance%2C%20and%20Privacy-focused%20Layer2%20platform.pdf)
 * [Unveiling OlaVM Proof of Concept: The Next-Generation Full-Featured zkVM](https://medium.com/@sin7y/unveiling-olavm-proof-of-concept-the-next-generation-full-featured-zkvm-5840b27f8e4c)
 
