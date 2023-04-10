@@ -10,10 +10,11 @@ There are some resources about OlaVM. The developers should learn the concepts a
 
 # Table of Contents
 
-* Edit the program: 
-* Compile the program: 
+* Edit the program: Ola supports writing on vscode, we have developed an extension to vscode to support ola syntax highlighting, and we will continue to improve the plugin in the future.
+The extension can be found on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola).
+* Compile the program: The compilation process can refer to the official documentation of the Ola language [Usage](https://github.com/Sin7Y/ola-lang#usage).
 * Run the program: refer to [olavm-execute.md](docs/olavm-execute.md).
-* Generate ZK proof:
+* Generate ZK proof: 
 * Verify ZK proof:
 
 Beginner Workshop: implement the fibonacci algorithm with loop and recursive two versions.
