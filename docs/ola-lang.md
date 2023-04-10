@@ -90,8 +90,3 @@ contract SqrtContract {
 
 }
 ```
-
-The following is the comparison of the execution time of the two implementations.
-
-| Implementation | Execution time |
-| :--- | :--- |
