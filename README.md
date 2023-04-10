@@ -14,8 +14,14 @@ There are some resources about OlaVM. The developers should learn the concepts a
 The extension can be found on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola).
 * Compile the program: The compilation process can refer to the official documentation of the Ola language [Usage](https://github.com/Sin7Y/ola-lang#usage).
 * Run the program: refer to [olavm-execute.md](docs/olavm-execute.md).
-* Generate ZK proof: 
-* Verify ZK proof:
+* Generate ZK proof: OlaVM execution results and all intermediate processes are recorded during execution and saved as json, including CPU execution trace table, Memory trace table, Range Check trace table, Bitwise trace table and comparison trace table. You can open these json files directly for a simple view, or you can convert it to an excel file for further analysis with the [tools](docs/olavm-trace-analysis.md) we provide. Generating proof can take some time, depending on the size of the trace you are generating.
+```
+ola prove  -i my_exec_trace.json -o my_generated_proof
+```
+* Verify ZK proof: Congratulations you have successfully generated the proof, now you only need to execute one command to verify it.
+```
+ola verify -i my_generated_proof
+```
 
 Beginner Workshop: implement the fibonacci algorithm with loop and recursive two versions.
 
