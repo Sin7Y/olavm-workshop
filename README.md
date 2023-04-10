@@ -12,7 +12,7 @@ There are some resources about OlaVM. The developers should learn the concepts a
 
 * [Edit the program](#Edit the program): Ola supports writing on vscode, we have developed an extension to vscode to support ola syntax highlighting, and we will continue to improve the plugin in the future.
 The extension can be found on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola).
-* [Compile the program](#Compile the program): The compilation process can refer to the official documentation of the Ola language [Usage](https://github.com/Sin7Y/ola-lang#usage).
+* [Compile the program](#Compile the program): refer to [ola-lang.md](docs/ola-lang.md).
 * [Run the program](#Execute the program): refer to [olavm-execute.md](docs/olavm-execute.md).
 * Generate ZK proof: OlaVM execution results and all intermediate processes are recorded during execution and saved as json, including CPU execution trace table, Memory trace table, Range Check trace table, Bitwise trace table and comparison trace table. You can open these json files directly for a simple view, or you can convert it to an excel file for further analysis with the [tools](docs/olavm-trace-analysis.md) we provide. Generating proof can take some time, depending on the size of the trace you are generating.
 ```

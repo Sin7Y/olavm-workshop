@@ -90,3 +90,41 @@ contract SqrtContract {
 
 }
 ```
+
+
+## ola language compiler Usage
+
+The olac compiler is run on the command line. The ola source file names are provided as command line arguments; the output is an Ola asm.
+
+### Command line interface
+
+```
+olac --help
+Ola Language Compiler
+
+Usage: olac <COMMAND>
+
+Commands:
+  compile  Compile ola source files
+  help     Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version
+```
+
+### Compile Ola Language to LLVM IR
+
+Olac's compile command supports subcommands, using the  `--gen  llvm-ir` option to generate llvm-ir
+
+```
+olac compile prophet_sqrt.ola --gen llvm-ir
+```
+
+### Compile Ola to Ola's Assembly code
+
+using the `--gen  asm` option to generate Ola assembly code
+
+```
+olac compile prophet_sqrt.ola --gen asm
+```
