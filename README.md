@@ -61,35 +61,36 @@ contract Fibonacci {
 In this step, the developer should compile the code to the JSON format executable file. Using below tool:
 
 compile code to assembly file fibo_loop_asm.asm:
-````
+````shell
 ./olac compile fibo_loop_asm.ola --gen asm
-
 ````
 
 The developer uses ola client command *asm* to encode code to executable file fibo_loop_exe.json:
 
-``
+````shell
 ./ola asm -i fibo_loop_asm.json -o fibo_loop_exe.json
-``
+````
+
 
 ### Execute the program
 The developer uses ola client command *run* to run executable file fibo_loop_exe.json and generate trace file fibo_loop_trace.json.
 
-``
+````shell
 ./ola run  -i fibo_loop_exe.json -o fibo_loop_trace.json
-``
+````
+
 
 ### Generate ZK proof
 The developer uses ola client command *prove* to generate ZK proof.
-```
+````shell
 ./ola prove  -i fibo_loop_trace.json -o fibo_loop_proof
-```
+````
 
 ### Verify ZK proof
 Finally，The developer uses ola client command *verify* to verify ZK proof. If verification is passed, the client should print "Verify succeed!".
-```
+````shell
 ./ola verify -i fibo_loop_proof
-```
+````
 
 ## Multi-core prover performance
 
