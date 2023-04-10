@@ -1,35 +1,33 @@
 # olavm-workshop
-
 This tutorial explains the steps necessary to run the program on OlaVM, generate ZK(zero-knowledge) proof and verify.
 
 ## Prerequisites
 There are some resources about OlaVM. The developers should learn the concepts and demonstrates to grasp the designs of OlaVM.
-* [Hello, OlaVM!](https://hackmd.io/@sin7y/H1yPj_J8i)
-* [Ola - A ZKVM-based, High-performance, and Privacy-focused Layer2 platform](https://github.com/Sin7Y/olavm-whitepaper-v2/blob/master/Ola%20-%20A%20ZKVM-based%2C%20High-performance%2C%20and%20Privacy-focused%20Layer2%20platform.pdf)
-* [Unveiling OlaVM Proof of Concept: The Next-Generation Full-Featured zkVM](https://medium.com/@sin7y/unveiling-olavm-proof-of-concept-the-next-generation-full-featured-zkvm-5840b27f8e4c)
+- [Hello, OlaVM!](https://hackmd.io/@sin7y/H1yPj_J8i)
+- [Ola - A ZKVM-based, High-performance, and Privacy-focused Layer2 platform](https://github.com/Sin7Y/olavm-whitepaper-v2/blob/master/Ola%20-%20A%20ZKVM-based%2C%20High-performance%2C%20and%20Privacy-focused%20Layer2%20platform.pdf)
+- [Unveiling OlaVM Proof of Concept: The Next-Generation Full-Featured zkVM](https://medium.com/@sin7y/unveiling-olavm-proof-of-concept-the-next-generation-full-featured-zkvm-5840b27f8e4c)
 
 ## Table of Contents
-
-* [Edit the program](#Edit the program): Ola supports writing on vscode, we have developed an extension to vscode to support ola syntax highlighting, and we will continue to improve the plugin in the future.
+- [Edit the program](#Edit-the-program): Ola supports writing on vscode, we have developed an extension to vscode to support ola syntax highlighting, and we will continue to improve the plugin in the future.
 The extension can be found on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola).
-* [Compile the program](#Compile the program): refer to [ola-lang.md](docs/ola-lang.md).
-* [Run the program](#Execute the program): refer to [olavm-execute.md](docs/olavm-execute.md).
-* Generate ZK proof: OlaVM execution results and all intermediate processes are recorded during execution and saved as json, including CPU execution trace table, Memory trace table, Range Check trace table, Bitwise trace table and comparison trace table. You can open these json files directly for a simple view, or you can convert it to an excel file for further analysis with the [tools](docs/olavm-trace-analysis.md) we provide. Generating proof can take some time, depending on the size of the trace you are generating.
-* Verify ZK proof: Congratulations you have successfully generated the proof, now you only need to execute one command to verify it.
+- [Compile the program](#Compile-the-program): Ola lang is a ZK compiler. It can compile the program to assembly, refer to [ola-lang.md](docs/ola-lang.md).
+- [Run the program](#Execute-the-program): Ola client is a OlaVM implementation. It can encode the assembly file to executive file and run. then generate trace file for constructing ZK proof. refer to [olavm-execute.md](docs/olavm-execute.md).
+- [Generate ZK proof](#Generate-ZK-proof): OlaVM execution results and all intermediate processes are recorded during execution and saved as json, including CPU execution trace table, Memory trace table, Range Check trace table, Bitwise trace table and comparison trace table. You can open these json files directly for a simple view, or you can convert it to an excel file for further analysis with the [tools](docs/olavm-trace-analysis.md) we provide. Generating proof can take some time, depending on the size of the trace you are generating.
+- [Verify ZK proof](#Verify-ZK-proof): Congratulations you have successfully generated the proof, now you only need to execute one command to verify it.
 
 Beginner Workshop: implement the Fibonacci algorithm with loop and recursive two versions.
 
 Advanced Workshop: implement the sqrt algorithm with Newton's method and prophet two versions.
 
 Helpful Resources: 
-* [source code](docs/ola-lang.md) of the above two workshops.
-* [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
-* [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
+- [source code](docs/ola-lang.md) of the above two workshops.
+- [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
+- [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
 
 ## User run steps guide
 In the paragraph, we guide the developer through the implementation of the loop Fibonacci algorithm.
 
-### Edit the program
+## Edit the program
 At first, the developer should use an editor(recommend [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Sin7y.ola)) to develop the Fibonacci algorithm code(refer to below) and save to file fibo_loop.ola.
 
 ````js
@@ -71,14 +69,12 @@ The developer uses ola client command *asm* to encode code to executable file fi
 ./ola asm -i fibo_loop_asm.json -o fibo_loop_exe.json
 ````
 
-
 ### Execute the program
 The developer uses ola client command *run* to run executable file fibo_loop_exe.json and generate trace file fibo_loop_trace.json.
 
 ````shell
 ./ola run  -i fibo_loop_exe.json -o fibo_loop_trace.json
 ````
-
 
 ### Generate ZK proof
 The developer uses ola client command *prove* to generate ZK proof.
