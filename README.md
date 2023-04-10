@@ -66,10 +66,11 @@ contract Fibonacci {
 ### Compile the program
 In this step, the developer should compile the code to the JSON format executable file. Using below tool:
 
-compile code to assembly file fibo_loop_asm.json:
-``
+compile code to assembly file fibo_loop_asm.asm:
+````
+olac compile fibo_loop_asm.ola --gen asm
 
-``
+````
 
 compile code to executable file fibo_loop_exe.json:
 
