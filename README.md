@@ -68,7 +68,7 @@ In this step, the developer should compile the code to the JSON format executabl
 
 compile code to assembly file fibo_loop_asm.asm:
 ````
-olac compile fibo_loop_asm.ola --gen asm
+./olac compile fibo_loop_asm.ola --gen asm
 
 ````
 
