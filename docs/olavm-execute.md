@@ -1,14 +1,19 @@
 # Client
 ola is standalone client of Olavm.
-It contains three version:
+It has three versions:
+
+| ola client          | support cpu arch  |     os type |
+|---------------------|:-----------------:|------------:|
+| ola-mac-arm64       |      aarch64      |       macos |
+| ola-x86-64-linux    |      x86_64       |       linux |
+| la-x86-64-win.exe   |      x86_64       |     windows |
 
 
-ola-mac-m1-pro: arch: aarch64(m1 pro), system: macos
-ola-x86-64-linux: arch: x86_64, system: linux
-ola-x86-64-win.exe: arch: x86_64, system: windows
+ola contains 4 command(asm, run, prove, verify). Their usage is as follows:
 
-* asm
+## asm
 This command relocates the label and encodes the assembly code.
+
 parameters:
 
 -i: input the file contain Ola-lang assemble code.
@@ -18,7 +23,7 @@ parameters:
 ./ola asm -i assembler/test_data/asm/prophet_sqrt.json -o prophet_sqrt.json
 ```
 
-* run
+## run
 This command makes OlaVM run the program and generate the trace of the program.
 parameters:
 
@@ -29,7 +34,7 @@ parameters:
 ./ola run  -i prophet_sqrt.json -o prophet_sqrt_trace.json
 ```
 
-* prove
+## prove
 This command generates proof from the trace.
 parameters:
 
@@ -40,7 +45,7 @@ parameters:
 ./ola prove  -i prophet_sqrt_trace.json -o prophet_sqrt_prove.bin
 ```
 
-* verify
+## verify
 
 This command verifies the proof of program.If true, it prints "Verify succeed!", else prints the error when verifying.
 parameters:
