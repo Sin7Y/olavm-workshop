@@ -1,15 +1,16 @@
 # Client
-ola is standalone client of Olavm.
-It has three versions:
+Ola is standalone client of OlaVM.
+It has four versions:
 
-| ola client          | support cpu arch  |     os type |
-|---------------------|:-----------------:|------------:|
-| ola-mac-arm64       |      aarch64      |       macos |
-| ola-x86-64-linux    |      x86_64       |       linux |
-| la-x86-64-win.exe   |      x86_64       |     windows |
+| Ola client        | CPU arch | OS type |
+|-------------------|:--------:|--------:|
+| ola-arm64-macosx  | aarch64  |  macosx |
+| ola-amd64-linux   |  x86_64  |   linux |
+| ola-amd64-win.exe |  x86_64  | windows |
+| ola-amd64-arm64   |  x86_64  |  macosx |
 
 
-ola contains 4 command(asm, run, prove, verify). Their usage is as follows:
+Ola contains 4 command(asm, run, prove, verify). Their usage is as follows:
 
 ## asm
 This command relocates the label and encodes the assembly code.
