@@ -9,7 +9,7 @@ There are some resources about OlaVM. The developers should learn the concepts a
 
 * Edit the program: 
 * Compile the program: 
-* Run the program: refer to docs/olavm-execute.md.
+* Run the program: refer to [olavm-execute.md](docs/olavm-execute.md).
 * Generate ZK proof:
 * Verify ZK proof:
 
@@ -17,7 +17,7 @@ Beginner Workshop: implement the fibonacci algorithm with loop and recursive two
 
 Advanced Workshop:  implement the sqrt algorithm with Newton method and prophet two versions.
 
-Helpful Resources: reference our implements of above two workshop(docs/ola-lang.md).
+Helpful Resources: reference [source code](docs/ola-lang.md) of above two workshop.
 
 # Contact
 Twitter: https://twitter.com/Sin7y_Labs
