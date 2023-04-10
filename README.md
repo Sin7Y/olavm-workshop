@@ -19,12 +19,20 @@ The extension can be found on the [Visual Studio Marketplace](https://marketplac
 
 Beginner Workshop: implement the fibonacci algorithm with loop and recursive two versions.
 
-Advanced Workshop:  implement the sqrt algorithm with Newton method and prophet two versions.
+Advanced Workshop:  implement the sqrt algorithm with Newton's method and prophet two versions.
 
 Helpful Resources: 
 * [source code](docs/ola-lang.md) of the above two workshops.
 * [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
 * [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
+
+# Multi-core prover performance
+
+| Algorithm                        |                Machine core                 | Machine Memory | OS type | Execution time | Proving time | Trace size |
+|----------------------------------|:-------------------------------------------:|----------------|--------:|----------------|--------------|------------|
+| 1000 times sqrt with prophet     |          Apple M1 Pro (10 threads)          | 32 GB          |  macosx | 58 ms          | 11.8 ses     | 18 MB      |
+| 1000 times sqrt(Newton's method) |          Apple M1 Pro (10 threads)          | 32 GB          |  macosx | 4441 ms        | 163 ses      | 681 MB     |
+
 
 # Contact
 Twitter: https://twitter.com/Sin7y_Labs
