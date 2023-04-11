@@ -103,5 +103,3 @@ Twitter: https://twitter.com/Sin7y_Labs
 Discord: http://discord.gg/vDFy7YEG6j
 
 Email: contact@sin7y.org
-
-[Ola workshop](https://github.com/Sin7Y/olavm-workshop)
