@@ -24,7 +24,7 @@ Helpful Resources:
 - [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
 - [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
 
-## User run steps guide
+## User program guide
 In the paragraph, we guide the developer through the implementation of the loop Fibonacci algorithm.
 
 ## Edit the program
