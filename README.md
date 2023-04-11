@@ -20,7 +20,8 @@ Beginner Workshop: implement the Fibonacci algorithm with loop and recursive two
 Advanced Workshop: implement the sqrt algorithm with Newton's method and prophet two versions.
 
 Helpful Resources: 
-- [source code](docs/ola-lang.md) of the above two workshops.
+- [tool chain](tool-chain): contains tool chain of Ola lang and Ola client.
+- [source code](docs/ola-lang.md): contains the source code of above two workshops.
 - [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
 - [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
 
