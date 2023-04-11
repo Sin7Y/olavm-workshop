@@ -22,8 +22,8 @@ Advanced Workshop: implement the sqrt algorithm with Newton's method and prophet
 Helpful Resources: 
 - [tool chain](tool-chain): contains tool chain of Ola lang and Ola client.
 - [source code](docs/ola-lang.md): contains the source code of above two workshops.
-- [ola-lang github project](https://github.com/Sin7Y/ola-lang.git) 
-- [ola-vm github project](https://github.com/Sin7Y/olavm) - PoC(Proof of concept) version
+- [Ola lang](https://github.com/Sin7Y/ola-lang.git): the github repository of Ola lang.
+- [OlaVM](https://github.com/Sin7Y/olavm): the github repository of OlaVM, now is the PoC(Proof of concept) version.
 
 ## User program guide
 In the paragraph, we guide the developer through the implementation of the loop Fibonacci algorithm.
