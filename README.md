@@ -93,8 +93,8 @@ Finally，The developer uses ola client command *verify* to verify ZK proof. If 
 
 | Algorithm                        |                Machine core                 | Machine Memory | OS type | Execution time | Proving time | Trace size |
 |:---------------------------------|:-------------------------------------------:|:--------------:|:-------:|:--------------:|:------------:|:----------:|
-| 1000 times sqrt(prophet)         |          Apple M1 Pro (10 threads)          |     32 GB      | macosx  |     58 ms      |   11.8 ses   |   18 MB    |
-| 1000 times sqrt(Newton's method) |          Apple M1 Pro (10 threads)          |     32 GB      | macosx  |    4441 ms     |   163 ses    |   681 MB   |
+| 1000 times sqrt(prophet)         |          Apple M1 Pro (10 threads)          |     32 GB      | macosx  |     58 ms      |   11.8 s   |   18 MB    |
+| 1000 times sqrt(Newton's method) |          Apple M1 Pro (10 threads)          |     32 GB      | macosx  |    4441 ms     |   163 s    |   681 MB   |
 
 
 # Contact
